@@ -1,0 +1,95 @@
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.top-links {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tab-link {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.tab-link:hover {
+    background-color: #e0e0e0;
+}
+
+@media screen and (max-width: 600px) {
+    .top-links {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tab-link {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: stretch;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.image-container img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    text-emphasis-color: rgba(255, 136, 0, 0.795);
+}
