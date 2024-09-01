@@ -1,8 +1,9 @@
+/* Contêiner principal da página */
 .page-container {
     position: relative;
     min-height: 100vh;
 }
-
+/* Fundo da página com imagem */
 .top-background {
     position: fixed;
     top: 0;
@@ -14,7 +15,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     opacity: 0.5;
 }
-
+/* Estilização da imagem de fundo */
 .background-image {
     position: absolute;
     top: 0;
@@ -24,7 +25,7 @@
     object-fit: cover;
 }
 
-
+/* Wrapper do conteúdo principal */
 .content-wrapper {
     position: relative;
     z-index: 1;
@@ -32,12 +33,12 @@
     margin: 0 auto;
     padding: 40px;
 }
-
+/* Estilização dos links no topo da página */
 .top-links {
     text-align: center;
     margin-bottom: 40px;
 }
-
+/* Estilo padrão para links de tab */
 .tab-link {
     display: inline-block;
     padding: 15px 25px;
@@ -48,11 +49,11 @@
     text-decoration: none;
     transition: all 0.3s ease;
 }
-
+/* Efeito ao passar o mouse sobre os links de tab */
 .tab-link:hover {
     background-color: #e0e0e0;
 }
-
+/* Media query para dispositivos com largura máxima de 600px */
 @media screen and (max-width: 600px) {
     .top-links {
         display: flex;
@@ -67,20 +68,20 @@
         margin: 5px 0;
     }
 }
-
+/* Grid para exibição organizada das informações de contato */
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-items: stretch;
 }
-
+/* Estilização individual para cada item da grid */
 .grid-item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+/* Container para as imagens */
 .image-container {
     background-color: white;
     padding: 20px;
@@ -89,18 +90,18 @@
     align-items: center;
     border-radius: 50%;
 }
-
+/* Estilização das imagens dentro do container */
 .image-container img {
     width: 80px;
     height: 80px;
     object-fit: contain;
 }
-
+/* Alinhamento centralizado e remoção de margem superior para títulos */
 h1, h2, h3 {
     margin-top: 0;
     text-align: center;
 }
-
+/* Centralização e cor de texto personalizada para parágrafos */
 p {
     text-align: center;
     text-emphasis-color: rgba(255, 136, 0, 0.795);
